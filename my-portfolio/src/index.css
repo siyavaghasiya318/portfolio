@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+
+ body {
+  background-color: #0f0815;
+  color: #e8e6f0;
+   overflow-x: hidden;
+ }
+ /* .body {
+   @apply
+   bg-[#160c1f]
+ } */
+ .paddingbox{
+   @apply
+   lg:px-20
+   md:px-15
+   sm:px-8
+   px-5
+ }
+.textclr{
+  @apply
+  text-[#22d3ee]
+}
+
+.textclr2{
+  @apply
+  text-[#e8e6f0]
+}
+li{
+  @apply
+  cursor-pointer 
+  hover:border-b-2
+  transition-all
+  duration-300
+  hover:text-[#22d3ee]
+  w-fit
+}
+
+
+  
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  scroll-behavior: smooth;
+}
