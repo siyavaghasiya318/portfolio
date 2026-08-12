@@ -5,7 +5,8 @@ export const userContax = createContext()
 
 export const UserProvider = ({children}) => {
 
-
+    // const APi = "http://localhost:5000/api",
+    const API = "https://portfolio-mu-sooty-65.vercel.app",
     const[sendContact,setSendContact] = useState({
         name:"",
         email:"",
@@ -24,7 +25,7 @@ export const UserProvider = ({children}) => {
         e.preventDefault()
         
         try {
-            const{data} = await axios.post("http://localhost:5000/api/contact/detail", sendContact)
+            const{data} = await axios.post(`${API}/contact/detail`, sendContact)
             console.log(data.message);
             toast.success(data.message)
 
