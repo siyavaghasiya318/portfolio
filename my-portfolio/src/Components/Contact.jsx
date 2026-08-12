@@ -5,12 +5,14 @@ import { MdEmail } from "react-icons/md";
 import { motion } from "framer-motion";
 import { contactdetail } from '../assets/List';
 import { userContax } from '../Context/UserContext';
-const Contact = () => {
-    const{HandleChange,submitContactForm,sendContact} = useContext(userContax)
+import { ImSpinner8 } from "react-icons/im";
 
-   
+const Contact = () => {
+    const { HandleChange, submitContactForm, load, sendContact } = useContext(userContax)
+
+
     return (
-          
+
         <>
             <div className="lg:flex mt-20 border rounded-xl backdrop-blur-sm bg-white/[0.02] border-white/10 ">
 
@@ -18,12 +20,26 @@ const Contact = () => {
                     <p className="text-2xl md:text-3xl font-bold textclr mb-15 lg:hidden block">Let's Connect</p>
 
 
-                    <form onSubmit={submitContactForm} action="" className="flex flex-col gap-10">
+                    <form onSubmit={submitContactForm} disabled={load} action="" className="flex flex-col gap-10">
                         <input name='name' value={sendContact.name} onChange={HandleChange} type="text" placeholder='Your Name' autoComplete="name" className='border-b border-white/20 py-1 outline-0 w-full' />
                         <input name='email' value={sendContact.email} onChange={HandleChange} type="email" placeholder='Your Email' autoComplete="email" className='border-b border-white/20 py-1 outline-0 w-full ' />
-                        <textarea name='message' value={sendContact.message} onChange={HandleChange}  rows={3} placeholder='Share your thought'  className='border-b border-white/20 outline-0 w-full' id=""></textarea>
+                        <textarea name='message' value={sendContact.message} onChange={HandleChange} rows={3} placeholder='Share your thought' className='border-b border-white/20 outline-0 w-full' id=""></textarea>
                         <button type='submit' className=' text-sm w-full py-3 outline-0 hover:scale-105 transition-all duration-300 uppercase tracking-wider disabled:cursor-not-allowed bg-gradient-to-br to-[#0b7080]  from-[#2729c9]  rounded-md textclr2 font-bold mt-5 bg-[#22d3eecb] flex items-center justify-center gap-2'>
-                            <FaPaperPlane className='text-sm' />Submit</button>
+                            <FaPaperPlane className='text-sm' />
+                            <p className="">Submit</p>
+                            {load ?
+                                (<div className="animate-spin text- transition-all text-lg duration-600 ms-4"><ImSpinner8 /></div>) :
+                                ("")}
+                        </button>
+
+                        {/* <div className='flex flex-col items-end '>
+                            <button type='submit' onClick={ProductSubmit} disabled={load} className='flex items-center gap-5 px-10 py-5 mt-8 bg-[#6a9f4d]/20 font-semibold text-[20px] rounded-lg w-fit'>
+                                {load ?
+                                    (<><div className='w-5 h-5 border-4 border-green-700 border-t-transparent rounded-full animate-spin'></div>Loading...</>)
+                                    :
+                                    (<><MdOutlineLaunch className='text-[25px]' />Launch Product</>)}
+                            </button>
+                        </div> */}
                     </form>
 
 

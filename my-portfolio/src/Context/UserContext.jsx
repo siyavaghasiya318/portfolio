@@ -3,11 +3,12 @@ import axios from "axios"
 import { toast } from "react-hot-toast";
 export const userContax = createContext()
 
-// const API = "http://localhost:5000/api"
-const API = "https://portfolio-r05h.onrender.com/api"
+const API = "http://localhost:5000/api"
+// const API = "https://portfolio-r05h.onrender.com/api"
 
 export const UserProvider = ({ children }) => {
 
+    const[load,setLoad] = useState(false)
 
     const [sendContact, setSendContact] = useState({
         name: "",
@@ -30,13 +31,16 @@ export const UserProvider = ({ children }) => {
             const { data } = await axios.post(`${API}/contact/detail`, sendContact)
             console.log(data.message);
             toast.success(data.message)
-
+            if(data.success){
+                setLoad(true)
+            }
             setSendContact({
                 name: "",
                 email: "",
                 message: ""
             })
 
+            setLoad(false)
         } catch (error) {
             console.log("submitContact error", error);
             toast.error(error?.response?.data?.message || "something went wrong");
@@ -44,7 +48,7 @@ export const UserProvider = ({ children }) => {
     }
 
     return (
-        <userContax.Provider value={{ HandleChange, submitContactForm, sendContact }}>
+        <userContax.Provider value={{ HandleChange,load, submitContactForm, sendContact }}>
             {children}
         </userContax.Provider>
     )
