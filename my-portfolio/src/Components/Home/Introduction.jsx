@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 
 const Introduction = () => {
   return (
-    <motion.div initial={{ y: 50, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 0.6,delay: 0.5 }} viewport={{
-                      once: true,
-                      amount: 0.2
-                    }} className=" pt-35 items-center lg:flex gap-30  shadow ">
+    <motion.div initial={{ y: 50, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 0.6, delay: 0.5 }} viewport={{
+      once: true,
+      amount: 0.2
+    }} className=" pt-35 items-center lg:flex gap-30  shadow ">
 
 
       <div className="flex lg:w-[70%] flex-col gap-3 order-2 lg:order-1 lg:text-left text-center">
