@@ -43,7 +43,7 @@ const Skills = () => {
     <>
       <div className="text-[35px] mb-15 font-bold text-center">Skils & Abilities</div>
 
-      <div className="p-10 relative py-16 overflow-hidden bg-gradient-to-b from-[#0f0815] via-[#160a24] to-[#0f0815]">
+      <div className="p-10 relative py-16  overflow-hidden bg-gradient-to-b from-[#0f0815] via-[#160a24] to-[#0f0815]">
         {/* <div className="absolute top-20 left-20 w-72 h-72 bg-cyan-500/10 blur-[120px] rounded-full"></div> */}
 
         <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-violet-500/10 blur-[150px] rounded-full"></div>
@@ -59,9 +59,9 @@ const Skills = () => {
                   transition={{
                     duration: 0.3,
                     ease: "easeOut"
-                  }} className="w-26 h-25  gap-2 m-auto px-2 py-5 rounded-lg flex flex-col justify-center items-center ">
+                  }} className="lg:w-26 w-full lg:h-25  gap-2 m-auto px-2 py-5 rounded-lg flex flex-col justify-center items-center ">
                   <i className='text-[40px]' style={{ color: item.color }}>{item.icon}</i>
-                  <p className="font-semibold  text-center text-md">{item.name}</p>
+                  <p className="font-semibold  text-center text-sm md:text-md">{item.name}</p>
                 </motion.div>
 
               </>
