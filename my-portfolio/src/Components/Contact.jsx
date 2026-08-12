@@ -73,7 +73,7 @@ const Contact = () => {
                     </div>
 
                     <div className="flex gap-6 text-md text-white">
-                        <a href='' className=" border-[#e6e6eda1] rounded-full p-2 hover:scale-105 transition-all duration-300 cursor-pointer shadow shadow-cyan-600"><FaLinkedin /></a>
+                        <a href='https://www.linkedin.com/in/siya-vaghasiya-747225396' className=" border-[#e6e6eda1] rounded-full p-2 hover:scale-105 transition-all duration-300 cursor-pointer shadow shadow-cyan-600"><FaLinkedin /></a>
                         <a href='https://github.com/siyavaghasiya318' className=" border-[#e6e6eda1] rounded-full p-2 hover:scale-105 transition-all duration-300 cursor-pointer shadow shadow-cyan-600"><FaGithub /></a>
                         <a href='' className=""></a>
                     </div>

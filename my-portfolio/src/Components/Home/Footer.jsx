@@ -32,8 +32,8 @@ const Footer = () => {
             </a>
 
             <a
-              href=""
-              target="_blank"
+              href="https://www.linkedin.com/in/siya-vaghasiya-747225396"
+              target=""
               rel="noopener noreferrer"
               className="text-xl text-[#e6e6eda1] hover:text-[#22d3ee] transition duration-300"
             >
