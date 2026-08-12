@@ -3,8 +3,8 @@ import axios from "axios"
 import { toast } from "react-hot-toast";
 export const userContax = createContext()
 
-const API = "http://localhost:5000/api"
-// const API = "https://portfolio-r05h.onrender.com/api"
+// const API = "http://localhost:5000/api"
+const API = "https://portfolio-r05h.onrender.com/api"
 
 export const UserProvider = ({ children }) => {
 
