@@ -19,7 +19,7 @@ export const NavBar = () => {
     <>
       <div className="textclr2 flex justify-between fixed top-0 left-0 w-full z-100 
              bg-[#0f0815]/95 backdrop-blur-lg paddingbox py-5 shadow shadow-[#21122f]" >
-        <motion.a initial={{ x: -40 }} whileInView={{ x: 0 }} transition={{ duration: 0.4 }} href="#home" className="font-bold text-xl textclr">Portfolio.</motion.a>
+        <motion.a initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.4 }} href="#home" className="font-bold text-xl textclr">Portfolio.</motion.a>
 
         <motion.ul className="gap-10 uppercase text-sm font-bold lg:flex hidden lg:block ">
 
