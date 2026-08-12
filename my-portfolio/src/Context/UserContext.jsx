@@ -5,7 +5,7 @@ export const userContax = createContext()
 
 export const UserProvider = ({children}) => {
 
-    // const APi = "http://localhost:5000/api",
+    // const API = "http://localhost:5000/api"
     const API = "https://portfolio-r05h.onrender.com"
     const[sendContact,setSendContact] = useState({
         name:"",
@@ -37,7 +37,7 @@ export const UserProvider = ({children}) => {
             
         } catch (error) {
             console.log("submitContact error", error);
-            toast.error(error?.response?.data?.message   );
+            toast.error(error?.response?.data?.message  || "something went wrong");
         }
     }
 
