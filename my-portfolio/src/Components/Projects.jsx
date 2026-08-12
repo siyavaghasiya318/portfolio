@@ -23,7 +23,7 @@ const Projects = () => {
                   }`}>
                   <motion.div
                     initial={{
-                      x: index % 2 === 0 ? -50 : 50,
+                      // x: index % 2 === 0 ? -50 : 50,
                       opacity: 0
                     }}
                     whileInView={{
@@ -47,7 +47,7 @@ const Projects = () => {
 
                   <motion.div
                     initial={{
-                      x: index % 2 === 0 ? 50 : -50,
+                      // x: index % 2 === 0 ? 50 : -50,
                       opacity: 0
                     }}
                     whileInView={{
