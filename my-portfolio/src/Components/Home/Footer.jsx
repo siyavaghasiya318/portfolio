@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 items-center">
 
           {/* Left */}
-          <motion.div initial={{ x: -40 }} whileInView={{ x: 0 }} transition={{ duration: 0.6 }} >
+          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6 }} >
             <p className="text-sm text-[#e6e6eda1]">
               © {new Date().getFullYear()} Developer Portfolio by{" "}
               <span className="textclr font-semibold">
@@ -21,7 +21,7 @@ const Footer = () => {
           </motion.div>
 
           {/* Center */}
-          <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ duration: 0.4 }} className="flex md:justify-center mt-5 md:mt-0 items-center gap-6">
+          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.4 }} className="flex md:justify-center mt-5 items-center gap-6">
             <a
               href="https://github.com/siyavaghasiya318"
               target="_blank"

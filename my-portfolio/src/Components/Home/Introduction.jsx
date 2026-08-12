@@ -26,7 +26,7 @@ const Introduction = () => {
 
       <div className="mt-10 lg:mt-0 relative flex flex-col justify-between items-center lg:order-2 order-1">
         <div className="absolute inset-10 bg-blue-500/20 blur-[90px]"></div>
-        <div className="h-85 w-110 md:w-full md:h-full lg:h-85 lg:w-110 relative border-1 rounded-3xl border-[#22d3ee]/20 ">
+        <div className="h-85 w-100 md:w-full md:h-full lg:h-85 lg:w-110 relative border-1 rounded-3xl border-[#22d3ee]/20 ">
           <img src="https://images.openai.com/static-rsc-4/1wghQHABRJMsYe-i_klRXAkPbqHySy2IJnwKc7L_hIbVENv6mui6zqokolHVIXj5rKGX010rwms_OoVy8Injpd-tpik1j9rVNrHVahKekV6wKwtyJZb_xk3kTylw-mvw--ClaDAC04kPvczNiEC3MSSpgp1mhaeWrdTitQ1PHBzSNGEUkIZNTYAcEX1TOmm2?purpose=fullsize" className='w-full rounded-3xl h-full object-cover' alt="" />
           <p className="absolute bg-black/25 w-full h-full top-0 "></p>
         </div>
