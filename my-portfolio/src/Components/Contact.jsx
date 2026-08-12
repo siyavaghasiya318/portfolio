@@ -14,9 +14,9 @@ const Contact = () => {
     return (
 
         <>
-            <div className="lg:flex mt-20 border rounded-xl backdrop-blur-sm bg-white/[0.02] border-white/10 ">
+            <motion.div initial={{y:100}} whileInView={{y:0}} transition={{duration:0.5}} className="lg:flex mt-20 border rounded-xl backdrop-blur-sm bg-white/[0.02] border-white/10 ">
 
-                <motion.div initial={{ x: -100 }} whileInView={{ x: 0 }} transition={{ duration: 0.5 }} className="lg:w-1/2 lg:py-20 py-10 px-15">
+                <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.5 }} className="lg:w-1/2 lg:py-20 py-10 px-15">
                     <p className="text-2xl md:text-3xl font-bold textclr mb-15 lg:hidden block">Let's Connect</p>
 
 
@@ -45,7 +45,7 @@ const Contact = () => {
 
                 </motion.div>
 
-                <motion.div initial={{ x: 100 }} whileInView={{ x: 0 }} transition={{ duration: 0.5 }} className="pb-10 lg:py-20 px-15 gap-2 flex flex-col">
+                <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.9 }} className="pb-10 lg:py-20 px-15 gap-2 flex flex-col">
 
                     <p className="text-3xl font-bold textclr hidden lg:block">Let's Connect</p>
                     <p className="text-gray-400 mt-5">
@@ -78,7 +78,7 @@ const Contact = () => {
                         <a href='' className=""></a>
                     </div>
                 </motion.div>
-            </div>
+            </motion.div>
         </>
     )
 }

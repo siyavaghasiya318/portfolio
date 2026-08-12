@@ -11,7 +11,7 @@ const AboutDetail = () => {
                    <div className="w-80 h-80 relative "> 
                     <img src="/siyaProfile.jpg" className='w-full h-full object-cover object-top rounded-full' alt="" /></div>
                 </motion.div>
-                <motion.div initial={{x:100}} whileInView={{x:0}} transition={{duration:0.5 }} className="lg:w-1/2 text-gray-200 text-md capitalize">
+                <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.8 }} className="lg:w-1/2 text-gray-200 text-md capitalize">
                 <p className="uppercase text-lg font-bold textclr">Who i am</p><br />
                     I’m Siya Vaghasiya, a passionate MERN Stack Developer with a strong interest in building modern web applications. I enjoy exploring new technologies, learning continuously, and solving real-world problems through code.
                     <br />

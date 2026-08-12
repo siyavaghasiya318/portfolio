@@ -17,7 +17,7 @@ export const NavBar = () => {
   ];
   return (
     <>
-      <div className="textclr2 flex justify-between fixed top-0 left-0 w-full z-100
+      <div className="textclr2 flex justify-between fixed top-0 left-0 w-full z-100 
              bg-[#0f0815]/95 backdrop-blur-lg paddingbox py-5 shadow shadow-[#21122f]" >
         <motion.a initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ duration: 0.4 }} href="#home" className="font-bold text-xl textclr">Portfolio.</motion.a>
 

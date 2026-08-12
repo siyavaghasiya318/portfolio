@@ -10,7 +10,7 @@ import Footer from '../Components/Home/Footer'
 const HomePage = () => {
   return (
     <>
-      <div className='paddingbox flex flex-col gap-40'>
+      <div className='paddingbox flex flex-col m-auto gap-40 '>
         <section id="home"><Introduction/></section>
         <section id='about'><AboutDetail/></section>
         <section id='education'><Education/></section>
