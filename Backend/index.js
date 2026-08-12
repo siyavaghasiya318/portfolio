@@ -18,6 +18,7 @@ app.use(cookieParser())
 const corsOrigin = [
     "http://localhost:5173",
     "http://localhost:5174",
+    "https://portfolio-mu-sooty-65.vercel.app"
 ]
 
 app.use(cors({
