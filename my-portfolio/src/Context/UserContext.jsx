@@ -26,14 +26,11 @@ export const UserProvider = ({ children }) => {
 
     const submitContactForm = async (e) => {
         e.preventDefault()
-
+        setLoad(true)
         try {
             const { data } = await axios.post(`${API}/contact/detail`, sendContact)
             console.log(data.message);
             toast.success(data.message)
-            if(data.success){
-                setLoad(true)
-            }
             setSendContact({
                 name: "",
                 email: "",
@@ -44,6 +41,8 @@ export const UserProvider = ({ children }) => {
         } catch (error) {
             console.log("submitContact error", error);
             toast.error(error?.response?.data?.message || "something went wrong");
+        }finally{
+            setLoad(false)
         }
     }
 
