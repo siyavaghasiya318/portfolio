@@ -3,7 +3,21 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { HiArrowUp } from "react-icons/hi";
 import { motion } from "framer-motion";
+const handleEmail = () => {
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    window.location.href =
+      "mailto:svaghasiya318@gmail.com?subject=Job%20Opportunity";
+  } else {
+    window.open(
+      "https://mail.google.com/mail/?view=cm&fs=1&to=svaghasiya318@gmail.com&su=Job%20Opportunity",
+      "_blank"
+    );
+  }
+};
 const Footer = () => {
+
   return (
     <footer className="mt-20 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-6 py-8">
@@ -40,14 +54,12 @@ const Footer = () => {
               <FaLinkedinIn />
             </a>
 
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=svaghasiya318@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={handleEmail}
               className="text-xl text-[#e6e6eda1] hover:text-[#22d3ee] transition duration-300"
             >
               <MdEmail />
-            </a>
+            </button>
           </motion.div>
 
           {/* Right */}
