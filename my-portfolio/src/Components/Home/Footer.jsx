@@ -56,6 +56,7 @@ const Footer = () => {
 
             <button
               onClick={handleEmail}
+              href="mailto:svaghasiya318@gmail.com?subject=Job%20Opportunity"
               className="text-xl text-[#e6e6eda1] hover:text-[#22d3ee] transition duration-300"
             >
               <MdEmail />
