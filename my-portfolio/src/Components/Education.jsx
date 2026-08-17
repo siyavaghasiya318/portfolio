@@ -18,7 +18,7 @@ const Education = () => {
                     <motion.div initial={{scale:0}} whileInView={{scale:1}}  transition={{duration:0.2}} className="border   rounded-xl border-[#062d3361]  p-5 bg-[url('https://abusaid.netlify.app/blur-23.svg')] bg-center">
                         
                         <div className="flex items-center gap-6  w-full h-full">
-                            <i className='border w-16 text-[#22d3ee] bg-[#22d3ee]/15 text-2xl border-[#094e5961] text-gray- h-15 flex flex-col justify-center items-center rounded-sm'><FaGraduationCap /></i>
+                            <i className='borderh-fit px-4 py-4 text-[#22d3ee] bg-[#22d3ee]/15 lg:text-2xl text-lg sm:text-xl border-[#094e5961] flex flex-col justify-center items-center rounded-sm'><FaGraduationCap /></i>
                             <div className="flex flex-col gap-1">
                                 <p className=""> Bachelor of Technology (B.Tech) in Information technology(IT)</p>
                                 <p className="text-sm textclr">Indus University, Ahmedabad</p>
@@ -35,7 +35,7 @@ const Education = () => {
 
                             <motion.div initial={{scale:0}} whileInView={{scale:1}} transition={{duration:0.4}} className="border lg:w-1/2 p-4 rounded-xl border-[#062d3361]  bg-[url('https://abusaid.netlify.app/blur-23.svg')] bg-center object-cover">
                                 <div className="flex gap-5  w-full h-full">
-                                    <i className='border  h-fit px-3 py-3 bg-[#22d3ee]/15 text-[#22d3ee] text-md   border-[#094e5961] text-gray-300 h-15 flex flex-col justify-center items-center rounded-md'><RiVerifiedBadgeFill className='text-[#22d3ee]' /></i>
+                                    <i className='border  h-fit px-3 py-3 bg-[#22d3ee]/15 text-[#22d3ee] text-md   border-[#094e5961] h-15 flex flex-col justify-center items-center rounded-md'><RiVerifiedBadgeFill className='text-[#22d3ee]' /></i>
                                     <div className="flex flex-col gap-1">
                                         <p className="">Frontend Development  </p>
                                         <p className="text-sm textclr">Talent Computer Institute of Technology (TCIT)</p>
